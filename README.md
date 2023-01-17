@@ -35,16 +35,6 @@
   <img src="./images/capa.png" alt="" />
 </p>
 
-<p align="center">
-  <a href="https://habits-nlw.vercel.app/" target="_blank">
-    <img alt="Demo on Vercel" height="50" width="50" src="https://res.cloudinary.com/dx3vxwusq/image/upload/v1613186216/vercel-deploy_x5v2jc.png" />
-  </a>
-</p>
-
-<h5 align="center">
-  Deploy at Vercel ☝🏽
-</h5>
-
 ---
 
 ## 🚴🏽 Project
