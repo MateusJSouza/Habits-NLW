@@ -1,34 +1,49 @@
 <p align="center">
-    <img alt="Imagem cover da aplicação do habits" src="./images/capa.png"/>
+  <img alt="Logo da aplicação habits" src="./images/icon.png" width="200" height="200" />
 </p>
 
-<h1 align="center">
-	NLW Setup by Rockeseat
-</h1>
+<h1 align="center">Next Level Week 11 - Trilha Ignite</h1>
 
-<p align="center">Trilha Ignite do evento NLW Setup.</p>
+<div style="display: flex; align-items: center; justify-content: center; gap: 4px" align="center">
+  <a href="#language">
+    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/MateusJSouza/Habits-NLW">
+  </a>
+  
+  <a href="#repository-size">
+    <img src="https://img.shields.io/github/repo-size/MateusJSouza/Habits-NLW" alt="Tamanho do repositório">
+  </a>
+  
+  <a href="https://www.codacy.com/gh/MateusJSouza/Habits-NLW/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MateusJSouza/Habits-NLW&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/0d3d31082ee745e9ac827b8c3f6b99f8"/>
+  
+  <a href="https://github.com/MateusJSouza/Habits-NLW/graphs/commit-activity">
+    <img src="https://img.shields.io/github/last-commit/MateusJSouza/Habits-NLW" alt="Últimos commits">
+  </a>
+  
+  <a href="https://github.com/MateusJSouza/Habits-NLW/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/MateusJSouza/Habits-NLW" alt="Licença MIT">
+  </a>
+</div>
+
+---
+
+<h4 align="center">
+  This is a project developed during the Next Level Week of the Rocketseat platform.
+</h4>
 
 <p align="center">
-  <img alt="License" src="https://img.shields.io/badge/license-MIT-2ecc71">
-
-  <a href="https://github.com/MateusJSouza">
-    <img alt="Made by Mateus Jesus" src="https://img.shields.io/badge/Made%20by-Mateus%20Jesus-2ecc71">
-  </a>
-
-  <a href="https://www.linkedin.com/in/mateus-jesus/" target="_blank">
-    <img alt="Follow me Linkedin" src="https://img.shields.io/badge/Follow%20up-mateusjesus-2ecc71?style=social&logo=linkedin">
-  </a>
+  <img src="./images/capa.png" alt="" />
 </p>
 
 ---
 
-## 🚴🏽 Projeto
+## 🚴🏽 Project
 
-Uma aplicação para controlar seus hábitos, onde você pode criar, visualizar e concluir os hábitos ao longo do dia.
+An application to track your habits, where you can create, view and complete habits throughout the day.
 
-Você pode visualizar o projeto online [aqui](https://habits-nlw.vercel.app/).
+You can view the project online right [here](https://habits-nlw.vercel.app/).
 
-## 🔧 Tecnologias
+## 🔧 Technologies
+This project was developed by me the following technologies:
 
 - [Vite](https://vitejs.dev/)
 - [ReactJS](https://reactjs.org/)
@@ -41,9 +56,9 @@ Você pode visualizar o projeto online [aqui](https://habits-nlw.vercel.app/).
 
 ---
 
-👉🏽 Acesse meu portfólio [aqui](https://mateusj-portfolio.vercel.app/).
+👉🏽 Access my portfolio [here](https://mateusj-portfolio.vercel.app/).
 
-<p align="center">Feito com 💜 por Mateus Jesus</p>
+<p align="center">Made with 💜 by Mateus Jesus</p>
 <div id="contatos" align="center">
   <a href="https://www.linkedin.com/in/mateus-jesus/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
 </div>
