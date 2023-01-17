@@ -1,12 +1,12 @@
 <p align="center">
-    <img alt="Habits Tracker" src="./images/capa.png"/>
+    <img alt="Imagem cover da aplicação do habits" src="./images/capa.png"/>
 </p>
 
 <h1 align="center">
 	NLW Setup by Rockeseat
 </h1>
 
-<p align="center">Trilha Ignite do Evento Next Level Week Return.</p>
+<p align="center">Trilha Ignite do evento NLW Setup.</p>
 
 <p align="center">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-2ecc71">
@@ -26,7 +26,7 @@
 
 Uma aplicação para controlar seus hábitos, onde você pode criar, visualizar e concluir os hábitos ao longo do dia.
 
-Você pode visualizar o projeto neste link da [Vercel](https://habits-nlw.vercel.app/).
+Você pode visualizar o projeto online [aqui](https://habits-nlw.vercel.app/).
 
 ## 🔧 Tecnologias
 
