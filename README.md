@@ -17,7 +17,7 @@
   </a>
   
   <a href="https://github.com/MateusJSouza/Habits-NLW/blob/master/LICENSE">
-    <img src="https://img.shields.io/github/license/MateusJSouza/Habits-NLW" alt="Licença MIT">
+    <img alt="GitHub" src="https://img.shields.io/github/license/MateusJSouza/Habits">
   </a>
 </p>
 
