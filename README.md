@@ -5,10 +5,6 @@
 <h1 align="center">Next Level Week 11 - Trilha Ignite</h1>
 
 <p align="center">
-  <a href="#language">
-    <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/MateusJSouza/Habits-NLW">
-  </a>
-  
   <a href="#repository-size">
     <img src="https://img.shields.io/github/repo-size/MateusJSouza/Habits-NLW" alt="Tamanho do repositório">
   </a>
@@ -20,7 +16,7 @@
     <img src="https://img.shields.io/github/last-commit/MateusJSouza/Habits-NLW" alt="Últimos commits">
   </a>
   
-  <a href="https://github.com/MateusJSouza/Habits-NLW/blob/main/LICENSE">
+  <a href="https://github.com/MateusJSouza/Habits-NLW/blob/master/LICENSE">
     <img src="https://img.shields.io/github/license/MateusJSouza/Habits-NLW" alt="Licença MIT">
   </a>
 </p>
