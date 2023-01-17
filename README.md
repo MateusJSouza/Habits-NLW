@@ -4,7 +4,7 @@
 
 <h1 align="center">Next Level Week 11 - Trilha Ignite</h1>
 
-<div style="display: flex; align-items: center; justify-content: center; gap: 4px" align="center">
+<p align="center">
   <a href="#language">
     <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/MateusJSouza/Habits-NLW">
   </a>
@@ -12,8 +12,9 @@
   <a href="#repository-size">
     <img src="https://img.shields.io/github/repo-size/MateusJSouza/Habits-NLW" alt="Tamanho do repositório">
   </a>
-  
-  <a href="https://www.codacy.com/gh/MateusJSouza/Habits-NLW/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MateusJSouza/Habits-NLW&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/0d3d31082ee745e9ac827b8c3f6b99f8"/>
+
+  <a href="https://www.codacy.com/gh/MateusJSouza/Habits-NLW/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=MateusJSouza/Habits-NLW&amp;utm_campaign=Badge_Grade">
+  <img src="https://app.codacy.com/project/badge/Grade/0d3d31082ee745e9ac827b8c3f6b99f8" />
   
   <a href="https://github.com/MateusJSouza/Habits-NLW/graphs/commit-activity">
     <img src="https://img.shields.io/github/last-commit/MateusJSouza/Habits-NLW" alt="Últimos commits">
@@ -22,7 +23,7 @@
   <a href="https://github.com/MateusJSouza/Habits-NLW/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/MateusJSouza/Habits-NLW" alt="Licença MIT">
   </a>
-</div>
+</p>
 
 ---
 
@@ -33,6 +34,16 @@
 <p align="center">
   <img src="./images/capa.png" alt="" />
 </p>
+
+<p align="center">
+  <a href="https://habits-nlw.vercel.app/" target="_blank">
+    <img alt="Demo on Vercel" height="50" width="50" src="https://res.cloudinary.com/dx3vxwusq/image/upload/v1613186216/vercel-deploy_x5v2jc.png" />
+  </a>
+</p>
+
+<h5 align="center">
+  Deploy at Vercel ☝🏽
+</h5>
 
 ---
 
