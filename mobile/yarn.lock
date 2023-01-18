@@ -3214,7 +3214,7 @@
   "resolved" "https://registry.npmjs.org/dag-map/-/dag-map-1.0.2.tgz"
   "version" "1.0.2"
 
-"dayjs@^1.8.15":
+"dayjs@^1.11.7", "dayjs@^1.8.15":
   "integrity" "sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ=="
   "resolved" "https://registry.npmjs.org/dayjs/-/dayjs-1.11.7.tgz"
   "version" "1.11.7"
