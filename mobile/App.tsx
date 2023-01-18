@@ -1,3 +1,4 @@
+import './src/lib/dayjs';
 import { StatusBar } from 'react-native';
 
 import {
@@ -22,7 +23,7 @@ export default function App() {
 
   // Se a fonte não carregar, o app não será renderizado
   if (!fontsLoaded) {
-    return <Loading />
+    return <Loading />;
   }
 
   return (
