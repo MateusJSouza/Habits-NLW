@@ -125,7 +125,7 @@ export async function appRoutes(app: FastifyInstance) {
   });
 
   // Resumo dos hábitos
-  app.get('/summary', async (request) => {
+  app.get('/summary', async () => {
     // SQL na mão -> (RAW)
     const summary = await prisma.$queryRaw`
       SELECT
