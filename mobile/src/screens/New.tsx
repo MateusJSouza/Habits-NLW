@@ -11,6 +11,7 @@ import { Checkbox } from '../components/Checkbox';
 export function New() {
   const [weekDays, setWeekDays] = useState<number[]>([]);
 
+  // Checagem dos dias da semana com o checkbox
   function handleToggleWeekDay(weekDayIndex: number) {
     if (weekDays.includes(weekDayIndex)) {
       setWeekDays(prevState => prevState.filter(weekDay => weekDay !== weekDayIndex));
@@ -46,7 +47,7 @@ export function New() {
         </Text>
 
         <TextInput
-          className="h-12 pl-4 rounded-lg mt-3 bg-zinc-800 text-white
+          className="h-12 pl-4 rounded-lg mt-3 bg-zinc-900 text-white border-2 border-zinc-800
           focus:border-2 focus:border-green-600"
           placeholder="Exercícios, dormir bem, etc..."
           placeholderTextColor={colors.zinc[400]}
@@ -61,8 +62,8 @@ export function New() {
           <Checkbox
             key={weekDay}
             title={weekDay}
-            checked={weekDays.includes(index)}
-            onPress={() => handleToggleWeekDay(index)}
+            checked={weekDays.includes(index)} // Preenchimento do checkbox
+            onPress={() => handleToggleWeekDay(index)} // Ao clicar
           />
         ))}
 
