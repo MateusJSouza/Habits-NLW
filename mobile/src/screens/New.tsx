@@ -1,8 +1,12 @@
-import { ScrollView, Text, TextInput, View } from 'react-native';
-import { BackButton } from '../components/BackButton';
-import colors from 'tailwindcss/colors';
-import { Checkbox } from '../components/Checkbox';
 import { useState } from 'react';
+
+import { ScrollView, Text, TextInput, TouchableOpacity, View } from 'react-native';
+
+import { Feather } from '@expo/vector-icons';
+import colors from 'tailwindcss/colors';
+
+import { BackButton } from '../components/BackButton';
+import { Checkbox } from '../components/Checkbox';
 
 export function New() {
   const [weekDays, setWeekDays] = useState<number[]>([]);
@@ -29,6 +33,7 @@ export function New() {
     <View className="flex-1 bg-background px-8 pt-16">
       <ScrollView
         showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ paddingBottom: 100 }}
       >
         <BackButton />
 
@@ -60,6 +65,20 @@ export function New() {
             onPress={() => handleToggleWeekDay(index)}
           />
         ))}
+
+        <TouchableOpacity
+          activeOpacity={0.7}
+          className="w-full h-14 flex-row items-center justify-center bg-green-600 rounded-md mt-6"
+        >
+          <Feather
+            name="check"
+            size={20}
+            color={colors.white}
+          />
+          <Text className="font-semibold text-base text-white ml-2">
+            Confirmar
+          </Text>
+        </TouchableOpacity>
       </ScrollView>
     </View>
   );
