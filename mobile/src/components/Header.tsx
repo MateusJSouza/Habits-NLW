@@ -3,14 +3,18 @@ import { Feather } from '@expo/vector-icons';
 import colors from 'tailwindcss/colors';
 
 import Logo from '../assets/logo.svg';
+import { useNavigation } from '@react-navigation/native';
 
 export function Header() {
+  const { navigate } = useNavigation();
+
   return (
     <View className="w-full flex-row items-center justify-between">
       <Logo />
 
       <TouchableOpacity
         activeOpacity={0.7}
+        onPress={() => navigate('new')}
         className="border rounded-lg flex-row h-11 px-4 border-violet-500 items-center"
       >
         <Feather
