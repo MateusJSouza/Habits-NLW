@@ -15,8 +15,6 @@ export function ProgressBar({ progress = 0 }: Props) {
     };
   });
 
-  console.log({ progress });
-
   useEffect(() => {
     sharedProgress.value = withTiming(progress);
   }, [progress]);
