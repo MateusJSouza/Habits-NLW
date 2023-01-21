@@ -1,4 +1,5 @@
 import * as Checkbox from '@radix-ui/react-checkbox';
+import dayjs from 'dayjs';
 import { Check } from 'phosphor-react';
 import { useEffect, useState } from 'react';
 import { api } from '../lib/api';
@@ -30,14 +31,17 @@ export function HabitsList({ date }: HabitsListProps) {
     });
   }, []);
 
+  const isDateInPast = dayjs(date)
+    .endOf('day')
+    .isBefore(new Date());
+
   return (
-
-
     <div className="mt-6 flex flex-col gap-3">
       {habitsInfo?.possibleHabits.map(habit => {
         return (
           <Checkbox.Root
             key={habit.id}
+            disabled={isDateInPast}
             checked={habitsInfo.completedHabits.includes(habit.id)} // quando o ID do hábito está dentro da lista dos hábitos completos, quer dizer que ele foi completado
             className="flex items-center gap-3 group" // adicionando a prop group
           >
