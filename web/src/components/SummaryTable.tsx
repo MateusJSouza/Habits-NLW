@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { generateDatesFromYearBeginning } from '../utils/generate-dates-from-year-beginning';
 
-import { api } from '../services/api';
+import { api } from '../lib/api';
 
 import { HabitDay } from './HabitDay';
 import dayjs from 'dayjs';
