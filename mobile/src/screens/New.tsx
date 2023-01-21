@@ -9,10 +9,13 @@ import { api } from '../lib/axios';
 
 import { BackButton } from '../components/BackButton';
 import { Checkbox } from '../components/Checkbox';
+import { useNavigation } from '@react-navigation/native';
 
 export function New() {
   const [title, setTitle] = useState('');
   const [weekDays, setWeekDays] = useState<number[]>([]);
+
+  const { navigate } = useNavigation();
 
   // Checagem dos dias da semana com o checkbox
   function handleToggleWeekDay(weekDayIndex: number) {
@@ -49,6 +52,8 @@ export function New() {
       setWeekDays([]);
 
       Alert.alert('Novo hábito', 'Hábito criado com sucesso!');
+
+      navigate('home');
 
     } catch (err) {
       Alert.alert('Ops', 'Não foi possível criar o novo hábito');
