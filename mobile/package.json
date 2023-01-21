@@ -12,6 +12,7 @@
     "@expo-google-fonts/inter": "^0.2.2",
     "@react-navigation/native": "^6.1.2",
     "@react-navigation/native-stack": "^6.9.8",
+    "axios": "^1.2.3",
     "dayjs": "^1.11.7",
     "expo": "~47.0.12",
     "expo-font": "~11.0.1",
@@ -27,6 +28,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
+    "@types/axios": "^0.14.0",
     "@types/react": "~18.0.14",
     "@types/react-native": "~0.70.6",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
