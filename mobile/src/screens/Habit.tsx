@@ -11,6 +11,7 @@ import { ProgressBar } from '../components/ProgressBar';
 import { Checkbox } from '../components/Checkbox';
 import { Loading } from '../components/Loading';
 import { HabitsEmpty } from '../components/HabitsEmpty';
+import clsx from 'clsx';
 
 interface Params {
   date: string;
@@ -42,6 +43,8 @@ export function Habit() {
     ? generateProgressPercentage(dayInfo.possibleHabits.length, completedHabits.length)
     : 0;
 
+  console.log({habitsProgress});
+
   async function fetchHabits() {
     try {
       setLoading(true);
@@ -59,13 +62,19 @@ export function Habit() {
   }
 
   async function handleToggleHabit(habitId: string) {
-    // Verificando se nos hábitos completos já existe o id desde hábito que estou querendo fazer o toggle
-    if (completedHabits.includes(habitId)) {
+    try {
+      await api.patch(`/habits/${habitId}/toggle`);
+
+      // Verificando se nos hábitos completos já existe o id desde hábito que estou querendo fazer o toggle
+      if (completedHabits?.includes(habitId)) {
       // Percorre todos os hábitos, retornando todos os hábitos, menos o que tenha este habitId
-      setCompletedHabits(prevState => prevState.filter(habit => habit !== habitId));
-    } else {
+        setCompletedHabits(prevState => prevState.filter(habit => habit !== habitId));
+      } else {
       // Caso contrário, significa que é um hábito que ainda não foi marcado
-      setCompletedHabits(prevState => [...prevState, habitId]);
+        setCompletedHabits(prevState => [...prevState, habitId]);
+      }
+    } catch (error) {
+      Alert.alert('Ops', 'Não foi possível atualizar o status do hábito');
     }
   }
 
@@ -97,7 +106,11 @@ export function Habit() {
 
         <ProgressBar progress={habitsProgress} />
 
-        <View className="mt-6">
+        <View className={
+          clsx('mt-6', {
+            ['opacity-50']: isDateInPast,
+          })
+        }>
           {
             dayInfo?.possibleHabits ?
               dayInfo.possibleHabits?.map(habit => (
@@ -105,6 +118,7 @@ export function Habit() {
                   key={habit.id}
                   title={habit.title}
                   checked={completedHabits.includes(habit.id)}
+                  disabled={isDateInPast}
                   onPress={() => handleToggleHabit(habit.id)}
                 />
               ))
